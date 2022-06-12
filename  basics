@@ -1,0 +1,467 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": " 20/3/22",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyMlS3+EWX+ntuHM5tb4v1p9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/vamsi1271/Krishna/blob/main/%20basics\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "da0ftL447Amr",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bfabab41-35fe-4759-f25f-ef44e0386c96"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'complex'>\n",
+            "<class 'str'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "# data types \n",
+        "a=5       #integer type\n",
+        "b=6.7       #float type \n",
+        "c=5j       #complex type\n",
+        "d=\"vamsi\"   #string type\n",
+        "print(type(a))\n",
+        "print(type(b))\n",
+        "print(type(c))\n",
+        "print(type(d))\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#convert one data type to another data \n",
+        "x=6             #int type\n",
+        "y=7.8           #float type\n",
+        "z=5j            #complex type\n",
+        "a=float(x)\n",
+        "b=int(y)\n",
+        "c=complex(x)\n",
+        "print(a)\n",
+        "print(b)\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aczjpwMtCpM4",
+        "outputId": "0806e01a-84fb-4170-f5b6-6a6b6b08854f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6.0\n",
+            "7\n",
+            "(6+0j)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Numeric data, string data, list data, touple data, bool data\n",
+        "a=int(4)\n",
+        "b=float(7.9)\n",
+        "c=complex(5j)\n",
+        "d=str(\"vamsi\")\n",
+        "e=[5,6,7,8,9]\n",
+        "f=[\"apple\",\"banana\",\"orange\",\"grapes\"]\n",
+        "g=(4,5,6,7)\n",
+        "h=(\"vamsi\",\"giri\",\"avinash\")\n",
+        "print(type(a))\n",
+        "print(type(b))\n",
+        "print(type(c))\n",
+        "print(type(d))\n",
+        "print(type(e))\n",
+        "print(type(f))\n",
+        "print(type(g))\n",
+        "print(type(h))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ffNe11lmKEqK",
+        "outputId": "05061ad1-0205-4556-ca41-b0279f32d640"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'complex'>\n",
+            "<class 'str'>\n",
+            "<class 'list'>\n",
+            "<class 'list'>\n",
+            "<class 'tuple'>\n",
+            "<class 'tuple'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#multi line strings \n",
+        "a='''vamsi\n",
+        "avinash\n",
+        "giridar'''\n",
+        "print(a)\n",
+        "b=\"\"\"kalayan\n",
+        "sai \n",
+        "prasanth\"\"\"\n",
+        "print(b)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bvjsxzmtMH9k",
+        "outputId": "f4af350b-5163-4970-8a98-fd67b9858edb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "vamsi\n",
+            "avinash\n",
+            "giridar\n",
+            "kalayan\n",
+            "sai \n",
+            "prasanth\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#index\n",
+        "a=\"hello, how are you!\" \n",
+        "print(a[7]) \n",
+        "print(a[0]) \n",
+        "print(a[10]) \n",
+        "print(a[11]) \n",
+        "print(a[-1]) \n",
+        "print(a[-17])\n",
+        "print(a[-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B3OHC3EDVsuh",
+        "outputId": "72d66818-9c21-4861-868e-3005ae9564a2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "h\n",
+            "h\n",
+            " \n",
+            "a\n",
+            "!\n",
+            "l\n",
+            "!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "FcVcIkbPYtUt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#slicing\n",
+        "b=\"hello bhaya,how are you!\"\n",
+        "print(a[0:5])\n",
+        "print(a[4:9])\n",
+        "print(a[10:15])\n",
+        "print(a[-6:-1])\n",
+        "print(a[9:19])\n",
+        "print(a[ :9])\n",
+        "print(a[0: ])\n",
+        "print(a[ : ])\n",
+        "print(a[::-1])\n",
+        "print(a[-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aA1wvkl2WGTe",
+        "outputId": "18c645f9-448b-48cc-af23-44ba4552bd18"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "life \n",
+            " is v\n",
+            "ry sh\n",
+            "momen\n",
+            "ery short,\n",
+            "life is v\n",
+            "life is very short, so enjoy every moment\n",
+            "life is very short, so enjoy every moment\n",
+            "tnemom yreve yojne os ,trohs yrev si efil\n",
+            "t\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Loping\n",
+        "for v in \"apple\":\n",
+        "  print(v)\n",
+        "for a in \"banana\"\"apple\":\n",
+        "  print(a)  \n",
+        "for m in \"watermelon\",\"lemon\":\n",
+        "  print(m)  "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G5lkxRQwYwLe",
+        "outputId": "29b918f6-2306-4711-eb23-adcc626ff56f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a\n",
+            "p\n",
+            "p\n",
+            "l\n",
+            "e\n",
+            "b\n",
+            "a\n",
+            "n\n",
+            "a\n",
+            "n\n",
+            "a\n",
+            "a\n",
+            "p\n",
+            "p\n",
+            "l\n",
+            "e\n",
+            "watermelon\n",
+            "lemon\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#to find lenth in string\n",
+        "a=\"hello how are you\"\n",
+        "print(len(a))\n",
+        "b=\"tommorow is the holiday\"\n",
+        "print(len(b))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cJoQTtzPaxqD",
+        "outputId": "ebe8b1e5-d057-490c-868f-6a842bbca7d9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "17\n",
+            "23\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#check string (paticulat word there are not)\n",
+        "#in \n",
+        "a=\"life is very short, so enjoy every moment\"\n",
+        "print(\"every\"in a)\n",
+        "print(\"vamsi\"in a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K7JJ3YstbJGJ",
+        "outputId": "eecb688b-88d4-4d37-c95b-19330d6f70eb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#if \n",
+        "a=\"life is very short, so enjoy every moment\"\n",
+        "if \"moment\"in a:\n",
+        "  print(\"yes,moment is prsent\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TslSvtbCcW49",
+        "outputId": "e5becc75-4c32-4423-e8d6-26894a976e6d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "yes,moment is prsent\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#not\n",
+        "a=\"life is very short, so enjoy every moment\"\n",
+        "print(\"vamsi\" not in a )\n",
+        "print(\"every\" not in a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dbE4HJnzajQX",
+        "outputId": "5815ce15-8bcc-44a8-bc92-4801fb14764b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#if\n",
+        "a=\"life is very short, so enjoy every moment\"\n",
+        "if \"vamsi\"not in a:\n",
+        "  print(\"no, 'vamsi' not in a\")\n",
+        " \n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JiuAACVFj9ZN",
+        "outputId": "333b2105-59bc-46c4-d84a-ed6edf170caf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "no, 'vamsi' not in a\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "0T_ZJaIrj1JA"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
